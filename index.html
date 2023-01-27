@@ -17,10 +17,13 @@
   <body>
     <navbar>
       <div class="nav-1">
-        <span><i><img class="menu-icon" src="images/icon-menu.svg"></i></span>
-        <img class="logo" src="images/logo.svg" alt="logo">
+        <span
+          ><i><img class="menu-icon" src="images/icon-menu.svg" /></i
+        ></span>
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
       </div>
-    
       <div class="navmenu">
         <ul class="mobile-menu">
           <li><a href="#">collections</a></li>
@@ -30,36 +33,50 @@
           <li><a href="#">contact</a></li>
         </ul>
       </div>
-  
+
       <div class="navbar-img">
-      <span><i><img class="cart" src="images/icon-cart.svg"></i></span>
-      <img class="avatar" src="images/image-avatar.png"> 
+        <span
+          ><i><img class="cart" src="images/icon-cart.svg" /></i
+        ></span>
+        <img class="avatar" src="images/image-avatar.png" />
       </div>
       <div class="cart-toggle">
         <h2>cart</h2>
-        <hr>
+        <hr />
         <div class="cart-content">
-          <img class="cart-toggle-img" src="images/image-product-1.jpg">
-          <span><P>fall limited edition sneakers<br> $125.00<span><i><img class="cart-close" src="claerimages/icon-close.svg"></i></span> 3 $375.00</P></span>
-          <span><i><img  class="cart-delete" src="images/icon-delete.svg"></i></span>
+          <img class="cart-toggle-img" src="images/image-product-1.jpg" />
+          <span
+            ><p>
+              fall limited edition sneakers<br />
+              $125.00<span
+                ><i
+                  ><img
+                    class="cart-close"
+                    src="claerimages/icon-close.svg" /></i
+              ></span>
+              3 $375.00
+            </p></span
+          >
+          <span
+            ><i><img class="cart-delete" src="images/icon-delete.svg" /></i
+          ></span>
         </div>
         <button class="cart-toggle-btn">checkout</button>
       </div>
       <div class="empty-cart">
         <h2>cart</h2>
-        <hr>
+        <hr />
         <p>Your cart is empty.</p>
       </div>
-    </navbar> 
-    
-    </div>
+    </navbar>
+
     <section class="major">
       <div class="image-product-1">
-        <img class="body-img" src="images/image-product-1.jpg">
+        <img class="body-img" src="images/image-product-1.jpg" />
       </div>
       <div class="sneakers-text">
         <h2>sneaker company</h2>
-        <h1>Fall Limited Edition Sneakers</h1>               
+        <h1>Fall Limited Edition Sneakers</h1>
         <p>
           These low-profile sneakers are your perfect casual wear companion.
           Featuring a durable rubber outer sole,they'll withstand everything the
@@ -77,7 +94,9 @@
             <img class="plus" src="images/icon-plus.svg" />
           </div>
           <button class="second-btn">
-            <i><img class="btn-cart" src="images/icon-cart.svg" />Add to cart</i>
+            <i
+              ><img class="btn-cart" src="images/icon-cart.svg" />Add to cart</i
+            >
           </button>
         </div>
       </div>
@@ -95,6 +114,29 @@
       </div>
       <div class="product-4">
         <img id="img" src="images/image-product-4-thumbnail.jpg" />
+      </div>
+    </div>
+    <div id="modal">
+      <span class="close">
+        <img src="images/icon-close.svg" />
+      </span>
+      <span>
+        <img class="btn next" src="images/icon-next.svg" />
+      </span>
+      <span>
+        <img class="btn previous" src="images/icon-previous.svg" />
+      </span>
+      <div class="modalContent">
+        <img src="images/image-product-1.jpg" class="imgtop-1" />
+        <!--        <img class="imgtop-2" src="images/image-product-2.jpg" />
+        <img class="imgtop-3" src="images/image-product-3.jpg" />
+        <img class="imgtop-4" src="images/image-product-4.jpg" /> -->
+        <div class="img-bottom">
+          <img class="imgbottom" src="images/image-product-1.jpg" />
+          <img class="imgbottom" src="images/image-product-2.jpg" />
+          <img class="imgbottom" src="images/image-product-3.jpg" />
+          <img class="imgbottom" src="images/image-product-4.jpg" />
+        </div>
       </div>
     </div>
     <script src="app.js"></script>
