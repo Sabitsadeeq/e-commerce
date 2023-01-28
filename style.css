@@ -22,9 +22,12 @@ navbar {
   height:auto;
 } */
 .nav-1 {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 .logo {
+  margin-top: -10px;
   margin-left: 10px;
   height: 50%;
   font-weight: 900;
@@ -33,6 +36,7 @@ navbar {
 .menu-icon {
   position: relative;
   z-index: 1;
+  padding: 5px;
 }
 ul {
   display: inline-block;
@@ -59,7 +63,8 @@ li a {
   margin-right: 10px;
 }
 .cart {
-  margin-right: 20px;
+  padding: 5px;
+  /* margin: 10px; */
 }
 /*---------------------cart toggle---------------------------- */
 .cart-toggle {
@@ -436,7 +441,7 @@ span {
   }
   .imgtop-1 {
     width: 40%;
-    max-width: 800px;
+    max-width: 450px;
     border-radius: 10px;
     display: block;
     position: absolute;
@@ -500,11 +505,23 @@ span {
 }
 @media screen and (min-width: 1024px) {
   body {
-    padding: 30px 120px;
+    /* padding: 30px 120px; */
   }
   .imgtop-1 {
     border: 2px solid red;
-    top: 20px;
+    top: 75px;
+    /* width: 50%; */
+  }
+  .imgbottom {
     width: 50%;
+  }
+  .close {
+    right: 72px;
+  }
+  .next {
+    right: 23%;
+  }
+  .previous {
+    left: 23%;
   }
 }
