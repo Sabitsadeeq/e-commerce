@@ -63,7 +63,7 @@ li a {
   margin-right: 10px;
 }
 .cart {
-  padding: 5px;
+  padding-right: 5px;
   /* margin: 10px; */
 }
 /*---------------------cart toggle---------------------------- */
@@ -292,6 +292,9 @@ span {
     display: inline-flex;
     float: right;
   }
+  li {
+    margin-top: 0.4rem;
+  }
   li a {
     color: gray;
     font-size: 8px;
@@ -362,38 +365,49 @@ span {
     margin: 45px;
     font-size: 0.5em;
   }
-  .body-img {
-    display: none;
-  }
-  .image-product-1 {
-    border: 2px solid red;
+  /* .body-img {
+    border-radius: 15px;
+    width: 40%;
+    height: auto;
+  } */
+  .image-product-1 .body-img {
+    /* border: 2px solid red; */
     background-image: url(../images/image-product-1.jpg);
-    width: 55%;
+    width: 100%;
+    height: auto;
     background-size: cover;
     background-position: center;
     object-fit: cover;
     border-radius: 15px;
   }
   .sneakers-text {
-    /* border: 2px solid blue; */
-    margin: 0px 10px;
     width: 45%;
   }
-
+  .prices {
+    padding: 10px;
+  }
   .group-btn {
-    display: flex;
-    margin-top: 12px;
+    justify-items: center;
+    display: inline-flex;
+    width: 100%;
+  }
+  .zero {
+    padding: 0px 10px;
   }
   .controller {
+    /* display: inline-flex; */
     align-self: center;
     width: 60%;
   }
   .plus {
-    padding-top: 30px;
+    padding-top: 30px 10px 10px 0px;
     bottom: 5px;
   }
   .second-btn {
+    display: block;
     padding: 8px;
+    width: 400px;
+    border: 2px solid blue;
   }
   span {
     width: 80%;
@@ -405,7 +419,7 @@ span {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 50%;
     grid-gap: 20px;
-    margin: 20px 0px 0px 45px;
+    margin: -20px 0px 0px 65px;
   }
   #img {
     width: 100%;
@@ -441,7 +455,7 @@ span {
   }
   .imgtop-1 {
     width: 40%;
-    max-width: 450px;
+    /* width: 35%; */
     border-radius: 10px;
     display: block;
     position: absolute;
@@ -449,27 +463,12 @@ span {
     top:4em; */
     align-items: center;
     justify-content: center;
-    top: 95px;
+    top: 75px;
     margin-bottom: 1em;
   }
-
-  .imgtop-2,
-  .imgtop-3,
-  .imgtop-4 {
-    display: none;
-    width: 40%;
-    position: absolute;
-    max-width: 800px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: center;
-    top: 95px;
-    margin-bottom: 1em;
-  }
-
   .img-bottom {
     position: absolute;
-    bottom: 1.4em;
+    bottom: 1.1em;
     display: flex;
     width: 12%;
     gap: 10px;
@@ -505,23 +504,31 @@ span {
 }
 @media screen and (min-width: 1024px) {
   body {
-    /* padding: 30px 120px; */
+    /* padding: 30px 200px; */
+  }
+  .group-btn {
+    margin-top: 65px;
+  }
+  .bottom-images {
+    margin-left: 63px;
+    grid-gap: 15px;
+    width: 45%;
   }
   .imgtop-1 {
-    border: 2px solid red;
-    top: 75px;
-    /* width: 50%; */
+    top: 55px;
+    width: 35%;
   }
   .imgbottom {
-    width: 50%;
+    width: 48%;
   }
-  .close {
-    right: 72px;
+  .close-icon {
+    right: 80px;
+    left: 65%;
   }
   .next {
-    right: 23%;
+    right: 30%;
   }
   .previous {
-    left: 23%;
+    left: 30%;
   }
 }
